@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "horsemod",
+	"version": "${version}",
+	"name": "horse-mod",
+	"description": "Mod made to learn Fabric <3",
+	"authors": [
+		"Fineriso"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod",
+        "dicord" : "fineriso",
+        "telegram" : "fineriso"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/horsemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fineriso.horsemod.Horsemod"
+		],
+		"fabric-datagen": [
+			"net.fineriso.horsemod.HorsemodDataGenerator"
+		],
+        "client" : [
+          "net.fineriso.horsemod.HorsemodClient"
+        ]
+	},
+	"mixins": [
+		"horsemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
