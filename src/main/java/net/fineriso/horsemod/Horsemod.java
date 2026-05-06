@@ -12,8 +12,6 @@ public class Horsemod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        LOGGER.info("Weź się zabij <3");
-
 
 	}
 
